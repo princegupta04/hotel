@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script language="javascript" type="text/javascript" src="shir.js">
+    </script>
+    <style>
+        body {
+            background-color: #f7f5e4;
+        }
+
+        .move-me {
+            display: inline-block;
+            padding: 5px;
+            color: white;
+            position: relative;
+            margin: 2px;
+            overflow: hidden;
+        }
+
+        .green {
+            background: repeating-linear-gradient(pink, aqua, yellow);
+            border: 2px solid grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            width: 50%;
+
+            border-radius: 10px;
+            /* padding:2px; */
+        }
+
+        .img2 {
+            float: center;
+            border-radius: 15px solid grey;
+            border: 2px solid black;
+
+
+        }
+
+        .img table {
+            border: 2px solid blueviolet;
+            background-color: #87d9d1;
+            border-radius: 30px;
+            width: 400px;
+            height: 200px;
+            padding: 2px;
+            margin-top: 20px;
+        }
+
+        .move-me-3 {
+            animation: move-in-steps ease-in-out 10s infinite;
+            animation-direction: reverse;
+            font-size: large;
+            color: black;
+            text-align: center;
+            /* border: 1px solid black; */
+            border-radius: 10px;
+
+
+        }
+
+        @keyframes move-in-steps {
+            0% {
+                left: 0;
+            }
+
+            100% {
+                left: 100%;
+
+            }
+
+        }
+
+        .video {
+            width: 1500px;
+            height: 400px;
+        }
+
+        .navbar {
+            background-color: #87d9d1;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 20px;
+            border: 2px solid #87D9d1;
+            border-radius: 50px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            margin: 5px 30px;
+        }
+
+        button a {
+            text-decoration: none;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+
+</head>
+
+
+<body>
+
+    <nav class="navbar">
+
+        <a href="hlogin.html">HOME</a>
+        <a href="room.html">Rooms</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact Us </a>
+    </nav>
+
+    <div class="move-me move-me-3">
+        <h1>
+            HOTEL MAHARAJA
+        </h1>
+    </div>
+    <video class="video" controls src="hv.mp4.mp4" type="video/mp4"></video>
+    <div align="center" class="img2">
+
+        <img class="slide" src="vi.jpg" width=1200 height=350>
+        <img class="slide" src="vi2.jpg" width=1200 height=350>
+        <img class="slide" src="vi3.jpg" width=1200 height=350>
+        <img class="slide" src="vi4.jpeg" width=1200 height=350>
+        <img class="slide" src="vi5.jpeg" width=1200 height=350>
+        <h2>CLICK ON IMAGE TO VIEW OUR BEST PLACES TO VISIT IN OUR HOTEL</h2>
+    </div>
+    <hr>
+
+    <div class="green">
+        <form>
+            <div>
+                <table>
+                    <th>BOOKING FORMS</th>
+                    <tr>
+                        <td> FULL NAME:<input type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            ID Proof:<SELECT name="ID Proof">
+                                <option value="adharcard">ADHAR CARD</option>
+                                <OPTION Value="pancard">PAN CARD</OPTION>
+                                <option value="vote card">VOTE CARD</option>
+                                <OPTION VLAUE="DRIVING liscense">DRIVING LISCENSE</OPTION>
+                            </SELECT>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>MOBILE NUMBER:<input type="number"></td>
+
+
+                    </tr>
+                    <tr>
+                        <td>Pay Via:</td>
+                        <div class="ct">
+                            <td>Card<input type="radio" name="Pay Via"></td>
+                            <td>Google pay<input type="radio" name="Pay Via"></td>
+                            <td>Net Banking<input type="radio" name="Pay Via"></td>
+                        </div>
+                    </tr>
+
+                    <tr>
+                        <td align="center"><button><a href="room.html">SUBMIT</a></button></td>
+                    </tr>
+
+
+
+                </table>
+            </div>
+
+
+
+        </form>
+    </div>
+    <h3>follow Us </h3>
+    <a href="https://www.instagram.com/p/CUut4QCPQsX/?utm_medium=share_sheet">
+        <img src="https://uploads-ssl.webflow.com/5f25a76921bf9f60f9a8a48b/5f284770bcf93d220f5f6476_NF_SocialsSmaller2.gif"
+            height="100" width="200"></a>
+
+</body>
+
+</html>
